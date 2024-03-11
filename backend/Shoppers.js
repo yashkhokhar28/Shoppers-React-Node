@@ -8,7 +8,7 @@ mongoose.connect("mongodb://localhost:27017/Shoppers").then(() => {
   console.log("Database Connected Successfully");
   const app = express();
   app.use(cors());
-  app.use(bodyParser.urlencoded({ extended: false }));
+  app.use(express.json());
 
   app.get("/", async (req, res) => {
     const data = await Shop.find();
