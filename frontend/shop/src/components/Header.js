@@ -28,7 +28,11 @@ const Header = () => {
               </li>
               <li class="nav-item">
                 <Link class="nav-link" to="/shop/add">
-                  Shopping Add
+                  Shopping Add</Link>
+              </li>
+              <li class="nav-item">
+                <Link class="nav-link" to="/pAPI">
+                  Python API
                 </Link>
               </li>
             </ul>

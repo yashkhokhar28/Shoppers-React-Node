@@ -6,6 +6,7 @@ import Layout from "./components/Layout";
 import ShoppingList from "./components/ShoppingList";
 import Shopping from "./components/Shopping";
 import ShoppingAdd from "./components/ShoppingAdd";
+import PythonAPI from "./components/pythonAPI";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -17,6 +18,7 @@ root.render(
           <Route path="/shop/:id" element={<Shopping />} />
           <Route path="/shop/add" element={<ShoppingAdd />} />
           <Route path="/shop/edit/:id" element={<ShoppingAdd />} />
+          <Route path="/pAPI" element={<PythonAPI />} />
         </Route>
       </Routes>
     </BrowserRouter>
